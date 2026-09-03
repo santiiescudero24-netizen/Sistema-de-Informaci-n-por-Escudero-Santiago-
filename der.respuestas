@@ -1,0 +1,13 @@
+3)
+cliente: candidatas {nombre, teléfono ,email , dirección} pk: id_cliente
+pedidos: candidatas {fecha, estado, cliente_asociados} pk: id_pedidos
+productos: candidatas {codigó, nombre, dirección, precio, stock } pk: id_productos
+empleados: candidatas {nombre, salario, email, } pk: id_empleados
+ 4)
+cliente - pedido: realiza
+pedido-producto:contiene
+empleado-pedido: atiende
+5)
+cliente - pedido: 1:N (un cliente puede hacer muchos pedidos) 
+pedido-producto: 1:N (Un pedido puede tener muchos productos)
+empleado-pedido: 1:N (Un empleado puede atender muchos pedidos)
