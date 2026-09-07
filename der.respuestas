@@ -1,3 +1,12 @@
+
+
+1) Productos, Clientes, Pedidos, Empleados
+
+2) producto:codigo(simple), nombre (compuesto), precio(simple), stock (compuesto).
+clientes: nombre(simple), dirección(compuesta,calle, numero),telefono(simple),
+email (multivaluado).
+empleados: nombre (simple), email (multivaluados), 
+pedidos: n.de pedido(simple), destino(compuesta, nombre de calle , numero de calle), 
 3)
 cliente: candidatas {nombre, teléfono ,email , dirección} pk: id_cliente
 pedidos: candidatas {fecha, estado, cliente_asociados} pk: id_pedidos
@@ -11,3 +20,17 @@ empleado-pedido: atiende
 cliente - pedido: 1:N (un cliente puede hacer muchos pedidos) 
 pedido-producto: 1:N (Un pedido puede tener muchos productos)
 empleado-pedido: 1:N (Un empleado puede atender muchos pedidos)
+6)
+Relación Pedido-Producto: cantidad (registra la cantidad de unidades de un producto específico dentro de un pedido determinado).
+7)
+multivaluado: email de Cliente (un cliente puede tener más de un correo electrónico).
+Se crea una nueva tabla llamada Cliente_Email con los campos: id_Email (PK), email, idCliente (FK).
+8) no lo han explicado
+9)no lo han explicado
+10)
+Cliente:id_Cliente (PK), nombre, direccion, telefono
+Cliente_Email: id_Email (PK), email, id_Cliente (FK)
+Producto: codigo_Producto (PK), nombre, precio, stock
+Empleado: id_Empleado (PK), nombre
+Pedido: id_Pedido (PK), fecha, estado, id_Cliente (FK), id_Empleado (FK)
+Pedido_Producto: id_Pedido (FK), codigo_Producto (FK), cantidad (clave primaria compuesta por ambos FKs)
