@@ -24,7 +24,7 @@ empleado-pedido: 1:N (Un empleado puede atender muchos pedidos)
 Relación Pedido-Producto: cantidad (registra la cantidad de unidades de un producto específico dentro de un pedido determinado).
 7)
 multivaluado: email de Cliente (un cliente puede tener más de un correo electrónico).
-Se crea una nueva tabla llamada Cliente_Email con los campos: id_Email (PK), email, idCliente (FK).
+Se crea una nueva tabla llamada Cliente_Email con los campos: id_Email (PK), email, id_Cliente (FK).
 8) no lo han explicado
 9)no lo han explicado
 10)
